@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PWA学习笔记 | Escape&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="When the wind comes, it's better to go after it.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/blog/assets/css/0.styles.1a4e248a.css" as="style"><link rel="preload" href="/blog/assets/js/app.1997d7db.js" as="script"><link rel="preload" href="/blog/assets/js/4.5e7973cd.js" as="script"><link rel="preload" href="/blog/assets/js/1.50b2f691.js" as="script"><link rel="preload" href="/blog/assets/js/17.67ca7118.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.b21dd939.js"><link rel="prefetch" href="/blog/assets/js/11.a04e2e73.js"><link rel="prefetch" href="/blog/assets/js/12.1b84053f.js"><link rel="prefetch" href="/blog/assets/js/13.17f7dadb.js"><link rel="prefetch" href="/blog/assets/js/14.7b36b9c0.js"><link rel="prefetch" href="/blog/assets/js/15.a5f69429.js"><link rel="prefetch" href="/blog/assets/js/16.7482eeeb.js"><link rel="prefetch" href="/blog/assets/js/18.0777666d.js"><link rel="prefetch" href="/blog/assets/js/19.3352bccf.js"><link rel="prefetch" href="/blog/assets/js/20.d5883e9b.js"><link rel="prefetch" href="/blog/assets/js/21.6fe11ece.js"><link rel="prefetch" href="/blog/assets/js/22.7799ecdf.js"><link rel="prefetch" href="/blog/assets/js/23.1de22da7.js"><link rel="prefetch" href="/blog/assets/js/24.5856d22a.js"><link rel="prefetch" href="/blog/assets/js/25.40ad6e3a.js"><link rel="prefetch" href="/blog/assets/js/26.5949c984.js"><link rel="prefetch" href="/blog/assets/js/27.a9267371.js"><link rel="prefetch" href="/blog/assets/js/28.732c3425.js"><link rel="prefetch" href="/blog/assets/js/29.26bc8c85.js"><link rel="prefetch" href="/blog/assets/js/30.7826f0eb.js"><link rel="prefetch" href="/blog/assets/js/31.bf47d454.js"><link rel="prefetch" href="/blog/assets/js/32.050ee456.js"><link rel="prefetch" href="/blog/assets/js/33.1a55673a.js"><link rel="prefetch" href="/blog/assets/js/34.c9493b84.js"><link rel="prefetch" href="/blog/assets/js/35.4214209b.js"><link rel="prefetch" href="/blog/assets/js/36.56732f1b.js"><link rel="prefetch" href="/blog/assets/js/37.3e73ffd8.js"><link rel="prefetch" href="/blog/assets/js/38.dd0a0041.js"><link rel="prefetch" href="/blog/assets/js/5.74359722.js"><link rel="prefetch" href="/blog/assets/js/6.b53eece9.js"><link rel="prefetch" href="/blog/assets/js/7.32a9eccf.js"><link rel="prefetch" href="/blog/assets/js/8.6fe2e7d6.js"><link rel="prefetch" href="/blog/assets/js/9.7aa0e8bf.js"><link rel="prefetch" href="/blog/assets/js/vendors~flowchart.5a69cd9a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.1a4e248a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-c00e2ab0><div data-v-c00e2ab0><div id="loader-wrapper" class="loading-wrapper" data-v-71fac282 data-v-c00e2ab0 data-v-c00e2ab0><div class="loader-main" data-v-71fac282><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4a776749 data-v-c00e2ab0 data-v-c00e2ab0><h3 class="title" style="display:none;" data-v-4a776749 data-v-4a776749>Escape's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-4a776749 data-v-4a776749><input type="password" value="" data-v-4a776749> <span data-v-4a776749>Konck! Knock!</span> <button data-v-4a776749>OK</button></label> <div class="footer" style="display:none;" data-v-4a776749 data-v-4a776749><span data-v-4a776749><i class="iconfont reco-theme" data-v-4a776749></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4a776749>vuePress-theme-reco</a></span> <span data-v-4a776749><i class="iconfont reco-copyright" data-v-4a776749></i> <a data-v-4a776749><span data-v-4a776749>Escape</span>
+            
+          <span data-v-4a776749>2018 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-c00e2ab0><header class="navbar" data-v-c00e2ab0><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/avatar.jpg" alt="Escape's blog" class="logo"> <span class="site-name">Escape's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/爬虫/" class="nav-link"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/category1/" class="nav-link"><i class="iconfont undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/taro/" class="nav-link"><i class="iconfont undefined"></i>
+  taro
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://github.com/2445050242" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-c00e2ab0></div> <aside class="sidebar" data-v-c00e2ab0><div class="personal-info-wrapper" data-v-1285c3cd><img src="/blog/avatar.jpg" alt="author-avatar" class="personal-img" data-v-1285c3cd> <h3 class="name" data-v-1285c3cd>
+    Escape
+  </h3> <div class="num" data-v-1285c3cd><div data-v-1285c3cd><h3 data-v-1285c3cd>22</h3> <h6 data-v-1285c3cd>Article</h6></div> <div data-v-1285c3cd><h3 data-v-1285c3cd>23</h3> <h6 data-v-1285c3cd>Tag</h6></div></div> <hr data-v-1285c3cd></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/爬虫/" class="nav-link"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/category1/" class="nav-link"><i class="iconfont undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/taro/" class="nav-link"><i class="iconfont undefined"></i>
+  taro
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://github.com/2445050242" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4a776749 data-v-c00e2ab0><h3 class="title" style="display:none;" data-v-4a776749 data-v-4a776749>PWA学习笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-4a776749 data-v-4a776749><input type="password" value="" data-v-4a776749> <span data-v-4a776749>Konck! Knock!</span> <button data-v-4a776749>OK</button></label> <div class="footer" style="display:none;" data-v-4a776749 data-v-4a776749><span data-v-4a776749><i class="iconfont reco-theme" data-v-4a776749></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4a776749>vuePress-theme-reco</a></span> <span data-v-4a776749><i class="iconfont reco-copyright" data-v-4a776749></i> <a data-v-4a776749><span data-v-4a776749>Escape</span>
+            
+          <span data-v-4a776749>2018 - </span>
+          2020
+        </a></span></div></div> <div data-v-c00e2ab0><main class="page"><div class="page-title" style="display:none;"><h1>PWA学习笔记</h1> <hr> <div data-v-ba876724><i class="iconfont reco-account" data-v-ba876724><span data-v-ba876724>Escape</span></i> <i class="iconfont reco-date" data-v-ba876724><span data-v-ba876724>2018-11-08</span></i> <!----> <i class="iconfont reco-tag tags" data-v-ba876724><span class="tag-item" data-v-ba876724>
+      pwa
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><ul><li><h2 id="参考文档"><a href="#参考文档" class="header-anchor">#</a> 参考文档</h2> <ul><li><a href="https://blog.csdn.net/column/details/14957.html" target="_blank" rel="noopener noreferrer">PWA(Progressive Web App)入门系列<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://segmentfault.com/a/1190000008880637" target="_blank" rel="noopener noreferrer">改造你的网站，变身 PWA<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://segmentfault.com/a/1190000004653475" target="_blank" rel="noopener noreferrer">Service Worker 学习笔记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://discipled.me/posts/service-workers" target="_blank" rel="noopener noreferrer">Service Workers 和离线缓存 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://juejin.im/post/59d9b38ef265da064a0f72cc" target="_blank" rel="noopener noreferrer">使用Service Worker发送Push推送<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://discipled.me/posts/notification-with-sw-push-events" target="_blank" rel="noopener noreferrer">Notification<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://segmentfault.com/a/1190000008929656" target="_blank" rel="noopener noreferrer">PWA：添加应用至桌面及分享<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.imooc.com/article/details/id/22758" target="_blank" rel="noopener noreferrer">Service Workers: 简介<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://blog.csdn.net/guojin08/article/details/78950144" target="_blank" rel="noopener noreferrer">Service Workers 初体验<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://cloud.tencent.com/developer/article/1004663" target="_blank" rel="noopener noreferrer">Service Worker 全面进阶<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.jianshu.com/p/0e2dee4c77bc" target="_blank" rel="noopener noreferrer">构建 Web 应用之 Service Worker 初探<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li> <li><h2 id="预览操作"><a href="#预览操作" class="header-anchor">#</a> 预览操作</h2> <p>建议安装 <a href="https://www.npmjs.com/package/http-server" target="_blank" rel="noopener noreferrer">http-server<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 和 <a href="https://link.zhihu.com/?target=https%3A//ngrok.com/" target="_blank" rel="noopener noreferrer">ngrok<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 以便调试和查看</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 执行命令
+http-server -c-1 # 注意设置关闭缓存, 这里用参数 -c-1
+# 用另一个终端
+ngrok http 8080
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>注：Demo 当中如果直接启动 http-server 而不使用 -c-1 关闭缓存, sw.js 可能被缓存住, 导致更新方案失败。这种情况下存在 Caches API 和 HTML caching 两层缓存, 需要进行清理才能完成更新。</p></li> <li><h2 id="主要涉及知识点"><a href="#主要涉及知识点" class="header-anchor">#</a> 主要涉及知识点</h2> <ul><li><h3 id="manifest（应用清单）"><a href="#manifest（应用清单）" class="header-anchor">#</a> Manifest（应用清单）</h3> <p>manifest是一种简单的json数据风格的配置文件，通过对其相应的属性进行配置，才实现相应的功能，这里可以称manifest为WEB应用清单。WEB应用清单可以实现自定义启动画面、打开URL、设置界面颜色、设置桌面图标等等</p> <p>示例如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//manifest.json
+{
+&quot;name&quot;: &quot;这是一个完整名称&quot;, //用来描述应用的名称，会显示在各类提示的标题位置和启动画面中
+&quot;short_name&quot;: &quot;短名称&quot;, //用来描述应用的短名字。当应用的名字过长，在桌面图标上无法全部显示时，会用short_name中定义的来显示
+&quot;start_url&quot;: &quot;index.html&quot;, //用来描述当用户从设备的主屏幕点击图标进入时，出现的第一个画面
+&quot;scope&quot;: {string}, //用来设置manifest对于网站的作用范围
+&quot;icons&quot;: [
+    {
+        &quot;src&quot;: &quot;144x144.png&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;144x144&quot; //单位为px，如果图标要适配多个尺寸，则第个尺寸间用空格分割，如12x12 24x24 100x100
+    }
+], //用来设置Web App的图标集合
+&quot;background_color&quot;: &quot;#2196f3&quot;, //用来设置Web App启动画面的背景颜色
+&quot;theme_color&quot;: &quot;#f00&quot;, //用于显示Web App的主题色，显示在banner位置
+&quot;display&quot;: &quot;standalone&quot;, //用来指定 Web App 从主屏幕点击启动后的显示类型
+/*
+可选项有：  
+    fullscreen：应用的显示界面将占满整个屏幕；  
+    standalone：浏览器相关UI（如导航栏、工具栏等）将会被隐藏；  
+    minimal-ui：显示形式与standalone类似，浏览器相关UI会最小化为一个按钮，不同浏览器在实现上略有不同；  
+    browser：浏览器模式，与普通网页在浏览器中打开的显示一致
+注：对于不同的显示样式，可以通过CSS的媒体查询进行设置
+*/
+&quot;orientation&quot;: {string}, //Web App的在屏幕上的显示方向
+/*
+可选项：
+    landscape-primary，当视窗宽度大于高度时，当前应用处于“横屏”状态
+    landscape-secondary，landscape-primary的180°方向
+    landscape，根据屏幕的方向，自动横屏幕180°切换
+    portrait-primary，当视窗宽度小于高度时，当前应用处于“竖屏”状态
+    portrait-secondary，portrait-primary的180°方向
+    portrait，根据屏幕方向，自动竖屏180°切换
+    natural， 根据不同平台的规则，显示为当前平台的0°方向
+    any，任意方向切换
+*/
+&quot;dir&quot;: {string}, //设置文字的显示方向
+/*
+可选项：
+    ltr，文本显示方向，左到右 
+    rtl，文本显示方向，右到左 
+    auto，根据系统的方向显示
+*/
+&quot;related_applications&quot;: {Array.&lt;AppInfo&gt;}, //用于定义对应的原生应用，类似应用安装横幅的形式去推广、引流
+/*
+//如安卓可以这么定义:
+//&quot;related_applications&quot;: [
+//    {
+//        &quot;platform&quot;: &quot;play&quot;, 应用平台
+        &quot;id&quot;: &quot;com.app.xxx&quot; 应用id
+//    }
+//]
+*/
+&quot;prefer_related_applications&quot;:{Boolean} //用于设置只允许用户安装原生应用
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><p><strong>参考文档：<a href="https://blog.csdn.net/lecepin/article/details/78911091" target="_blank" rel="noopener noreferrer">PWA(Progressive Web App)入门系列：（三）PWA关键技术Manifest<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></strong></p></li> <li><h3 id="service-workers"><a href="#service-workers" class="header-anchor">#</a> Service Workers</h3> <p>原生App拥有web应用通常所不具备的离线体验，定时的默默更新，消息通知推送等功能。而新的Service Worker标准让在web app上拥有这些功能成为可能。一个Service Worker是一段运行在浏览器后台进程里的脚本，他独立于当前页面，提供了那些不需要与web页面交互的功能在网页背后悄悄执行的能力。在将来，基于它可以实现消息推送，静静更新以及地理围栏等服务，但是目前它首先要具备的功能是拦截和处理网络请求的功能，包括可编程的消息缓存管理能力。</p> <p>注意点：<br>
+1、Service Workers 基于 Https，这是硬性条件<br>
+2、每个 Service Worker 都有自己的作用域，它只会处理自己作用域下的请求，而 Service Worker 的存放位置就是它的最大作用域<br>
+3、Service Workder 是 Web Worker 的一种，它不能够直接操作 DOM</p> <ul><li><h4 id="install-事件"><a href="#install-事件" class="header-anchor">#</a> Install 事件</h4> <p>在监听install事件中主要做的就是缓存文件和安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// server-worker.js
+const
+  version = '1.0.0',  //版本号
+  CACHE = version + '::PWAsite',  //缓存名
+  offlineURL = '/offline/',  //离线文件夹
+  installFilesEssential = [   //缓存文件数组
+    &quot;/&quot;,
+    &quot;index.html&quot;,
+    &quot;css/main.css&quot;,
+    '/js/offlinepage.js',
+    &quot;apple-touch-icon.png&quot;
+  ]
+  // .concat(offlineURL)
+  ,
+  installFilesDesirable = [
+    // '/favicon.ico',
+  ];
+//installStaticFiles()方法添加文件到缓存
+// install static assets
+function installStaticFiles() {
+    return caches.open(CACHE)
+    .then(cache =&gt; {
+    // cache desirable files
+    cache.addAll(installFilesDesirable);
+    // cache essential files
+    return cache.addAll(installFilesEssential);
+    });
+}
+//添加install的事件监听函数
+self.addEventListener('install', e =&gt; {
+    console.log('service worker: install');
+    //waitUntil方法确保所有代码执行完毕后，service worker 才会执行 install
+    e.waitUntil(
+        installStaticFiles()
+        .then(() =&gt; self.skipWaiting())// 调用 self.skipWaiting() 方法是为了在页面更新的过程当中, 新的 Service Worker 脚本能立即激活和生效。
+   );
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div></li> <li><h4 id="activate-事件"><a href="#activate-事件" class="header-anchor">#</a> Activate 事件</h4> <p>在fetch事件中检测服务和缓存是否更新</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// server-worker.js
+// clear old caches
+function clearOldCaches() {
+     //获取所有cache名称
+    return caches.keys()
+      .then(keylist =&gt; {
+        return Promise.all(
+          keylist
+            .filter(key =&gt; key !== CACHE)
+            .map(key =&gt; caches.delete(key))
+        );
+    });
+}
+// application activated
+// 缓存的资源随着版本的更新会过期, 所以会根据缓存的字符串名称清除旧缓存,   可以遍历所有的缓存名称逐一判断决决定是否清除
+self.addEventListener('activate', event =&gt; {
+    console.log('service worker: activate');
+      // delete old caches
+    event.waitUntil(
+      clearOldCaches()
+      .then(() =&gt; self.clients.claim()) // 在新安装的 Service Worker   中通过调用 self.clients.claim() 取得页面的控制权,   这样之后打开页面都会使用版本更新的缓存。旧的 Service Worker   脚本不再控制着页面之后会被停止
+      );
+});
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div></li> <li><h4 id="fetch-事件"><a href="#fetch-事件" class="header-anchor">#</a> Fetch 事件</h4> <p>fetch事件为监听网络请求，主要做的是监听网络请求的文件是否在缓存中，再决定以什么形式返回请求文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// server-worker.js
+//当有网络请求时这个事件被触发。它调用respondWith()方法来劫持 GET 请求并返回
+self.addEventListener('fetch', event =&gt; {
+    // abandon non-GET requests
+    if (event.request.method !== 'GET') return;
+    let url = event.request.url;
+    event.respondWith(
+      caches.open(CACHE)
+        .then(cache =&gt; {
+          return cache.match(event.request)
+            .then(response =&gt; {
+            // 如果请求文件在缓存文件中，则从缓存中返回文件
+              if (response) {
+                // return cached file
+                console.log('cache fetch: ' + url);
+                return response;
+              }  
+              // make network request
+              // 否则从正常网络中请求
+              return fetch(event.request)
+                .then(newreq =&gt; {
+                  //如果请求成功则将其存入缓存
+                  console.log('network fetch: ' + url);
+                  if (newreq.ok) cache.put(event.request,
+                  //要先复制一份response，原因是request或者response对象属于stream，只能使用一次，之后一份存入缓存，另一份发送个页面。
+                  newreq.clone());
+                  return newreq; 
+                })
+                // app is offline
+                .catch(() =&gt; offlineAsset(url));  
+            });  
+        })  
+    );
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div></li> <li><h4 id="message-事件"><a href="#message-事件" class="header-anchor">#</a> Message 事件</h4> <p>message事件监听页面发送过来的信息,service worker 与主窗口通也需要通过 postMessage。postMessage 方法并不在 worker 实例下，而是在 serviceWorker 下的 controller 对象下。</p> <p><strong>页面发送信息和接收信息</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//index.html
+//    判断是否支持sw
+if (navigator.serviceWorker != null) {
+    // 页面发送信息事件
+    // const sendMessageToSW = msg =&gt;  navigator.serviceWorker.controller &amp;&amp;  navigator.serviceWorker.controller.postMessage(msg);
+    const sendMessageToSW = msg =&gt; new Promise((resolve, reject) =&gt; {
+        //创建通道
+        const messageChannel = new MessageChannel();
+        //接收信息
+        messageChannel.port1.onmessage = event =&gt; {
+            console.log('main thread receive message...');
+            if (event.data.error) {
+                reject(event.data.error);
+            } else {
+                resolve(event.data);
+
+            }
+        };
+        // 向sw发送信息
+        navigator.serviceWorker.controller &amp;&amp;  navigator.serviceWorker.controller.postMessage(msg,  [messageChannel.port2]);
+    });
+    navigator.serviceWorker.register('service-worker.js')
+    .then(function (registration) {
+        console.log(&quot;Registered events st scope: &quot;,  registration.scope);
+    })            
+    .catch(() =&gt; console.error('Load service worker fail'))
+    //  页面给server-worker发送消息
+    .then(() =&gt; sendMessageToSW('Hello, service worker.'))
+    // 打印sw发送过来的信息
+    .then((data) =&gt; console.log(data))
+    .catch(() =&gt; console.error('Send message error.'));
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p><strong>sw发送信息和接受信息</strong></p> <p>在sw里需要传递MessagePort，这个是由MessageChannel生成的通信的两端，在己方的一端为channel.port1，使用channel.port1.onmessage即可监听从另一端返回的信息。而需要在postMessage里传的是channel.port2，给另一端postMessage使用。在sw端通过监听message事件就可以监听到主线程的postMessage，在message的event.ports[0]里即可找到主线程传过来的port，之后就可以用event.ports[0].postMessage来向主线程发送信息了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// server-worker.js
+//  监听message事件来获取页面发送过来的信息
+self.addEventListener('message', function(event) {
+  console.log('sw receive message..');
+  // 接收页面发送过来的信息
+  console.log(event.data);
+  // 向主线程发送信息
+  event.ports[0].postMessage('Hi, hello too');
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><h4 id="为应用添加离线缓存"><a href="#为应用添加离线缓存" class="header-anchor">#</a> 为应用添加离线缓存</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>// service-worker.js
+const HOST_NAME = location.host;
+const VERSION_NAME = 'CACHE-v1';
+const CACHE_NAME = HOST_NAME + '-' + VERSION_NAME;
+const CACHE_HOST = [HOST_NAME, 'cdn.bootcss.com'];
+
+const isNeedCache = function(url) {
+    return CACHE_HOST.some(function(host) {
+        return url.search(host) !== -1;
+    });
+};
+
+const isCORSRequest = function(url, host) {
+    return url.search(host) === -1;
+};
+
+const isValidResponse = function(response) {
+    return response &amp;&amp; response.status &gt;= 200 &amp;&amp; response.status &lt; 400;
+};
+
+const handleFetchRequest = function(req) {
+    if (isNeedCache(req.url)) {
+        const request = isCORSRequest(req.url, HOST_NAME) ? new   Request(req.url, {mode: 'cors'}) : req;
+        return caches.match(request)
+            .then(function(response) {
+                // Cache hit - return response directly
+                if (response) {
+                    // Update Cache for next time enter
+                    fetch(request)
+                        .then(function(response) {
+                            // Check a valid response
+                            if(isValidResponse(response)) {
+                                caches
+                                    .open(CACHE_NAME)
+                                    .then(function (cache) {
+                                        cache.put(request, response);
+                                    });
+                            } else {
+                                sentMessage('Update cache ' + request.url + ' fail: ' + response.message);
+                            }
+                        })
+                        .catch(function(err) {
+                            sentMessage('Update cache ' + request.url + ' fail: ' + err.message);
+                        });
+                    return response;
+                }
+                // Return fetch response
+                return fetch(request)
+                    .then(function(response) {
+                        // Check if we received an unvalid response
+                        if(!isValidResponse(response)) {
+                            return response;
+                        }
+                        const clonedResponse = response.clone();
+                        caches
+                            .open(CACHE_NAME)
+                            .then(function(cache) {
+                                cache.put(request, clonedResponse);
+                            });
+                        return response;
+                    });
+            });
+    } else {
+        return fetch(req);
+    }
+};
+const onFetch = function(event) {
+    event.respondWith(handleFetchRequest(event.request));
+};
+self.addEventListener('fetch', onFetch);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><p><strong>参考文档：<a href="https://segmentfault.com/a/1190000004653475" target="_blank" rel="noopener noreferrer">Service Worker 学习笔记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></strong></p></li></ul></li> <li><h3 id="push-notification（推送通知）"><a href="#push-notification（推送通知）" class="header-anchor">#</a> Push Notification（推送通知）</h3> <ul><li><h4 id="常用api"><a href="#常用api" class="header-anchor">#</a> 常用api</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ServiceWorkerRegistration.showNotification(title, options) 这个可以理解成alert的升级版，网页版的wechat的通知就是这个。  
+
+Notification.requestPermission() 提示用户是否允许浏览器通知
+
+PushManager Push API的核心对象，注册Push API从这里开始，放在 ServiceWorkerRegistration里
+
+  PushManager.subscribe 返回一个带有PushSubscription的Promise，通过PushSubscription对象才能生成公钥（PushSubscription.getKey()，这个方法只有firefox有，这也是chrome不能执行的原因），获取endpoint
+
+  PushManager.getSubscription() 获取当前注册好的PushSubscription对象
+
+atob()和btob() 意外捡到两个API，用于浏览器编码、解码base64
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>举个栗子：</strong>  (这块代码还没实践过，暂时先放置在这，可以先接着从下面的push实践开始看)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 浏览器端的main.js, 代码来自push-api-demo
+navigator.serviceWorker.ready.then(function(reg) {
+    // 注册push
+    reg.pushManager.subscribe({userVisibleOnly: true})
+       // 得到PushSubscription对象
+      .then(function(subscription) {
+        // The subscription was successful
+        isPushEnabled = true;
+        subBtn.textContent = 'Unsubscribe from Push Messaging';
+        subBtn.disabled = false;
+        
+        // Update status to subscribe current user on server, and  to let
+        // other users know this user has subscribed
+        var endpoint = subscription.endpoint;
+        // 生成公钥
+        var key = subscription.getKey('p256dh');
+        //  这一步是个ajax，把公钥和endpoint传给server，因为是https所  不怕公钥泄露
+        updateStatus(endpoint,key,'subscribe');
+      })
+});
+    
+// 服务端 server.js，接收并存下公钥、endpoint
+...
+} else if(obj.statusType === 'subscribe') {
+// bodyArray里是ajax传上来的key和endpoint
+    fs.appendFile('endpoint.txt', bodyArray + '\n', function (err) {
+      if (err) throw err;
+      fs.readFile(&quot;endpoint.txt&quot;, function (err, buffer) {
+        var string = buffer.toString();
+        var array = string.split('\n');
+        for(i = 0; i &lt; (array.length-1); i++) {
+          var subscriber = array[i].split(',');
+          webPush.sendNotification(subscriber[2], 200, obj.keyJSON.stringify({
+            action: 'subscribe',
+            name: subscriber[1]
+          }));
+        };
+      });
+    });
+  }
+  ...
+  
+  // 还是服务端 server.js，推送信息到service worker
+  if(obj.statusType === 'chatMsg') {
+      // 取出客户端传来的公钥和endpoint
+    fs.readFile(&quot;endpoint.txt&quot;, function (err, buffer) {
+      var string = buffer.toString();
+      var array = string.split('\n');
+      for(i = 0; i &lt; (array.length-1); i++) {
+        var subscriber = array[i].split(',');
+     // 这里用了web-push这个node的库，sendNotification里有key，说明息加密了
+        webPush.sendNotification(subscriber[2], 200, obj.keyJSON.stringify({
+          action: 'chatMsg',
+          name: obj.name,
+          msg: obj.msg
+        }));
+      };
+    });
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br></div></div></li> <li><h4 id="client端"><a href="#client端" class="header-anchor">#</a> Client端</h4> <p>1、进入页面后先注册ServiceWorker，然后subscribe PushManager，把公钥和endpoint传给Server端（ajax）保存下来，便于之后的通信（都是加密的）</p> <p>2、然后创建一个MessageChannel与ServiceWorker通信</p> <p>准备工作到这里就做完了。Client与Server端的通信还是ajax，聊天室嘛就是传用户发送的消息。ServiceWorker去监听push事件接住Server端push来的数据，在这个demo里都是Server端接到Client的ajax请求的响应，当然也可以又Server端主动发起一个push。当同时有两个以上的Client都与这个Server通信，那么这几个Client能看到所有与Server的消息，这才是聊天室嘛，不过要验证至少需要两台机器</p></li> <li><h4 id="server端"><a href="#server端" class="header-anchor">#</a> Server端</h4> <p>一个HTTPS服务，加了Web-Push这个module，这里面肯定有用公钥和endpoint给push信息加密的功能。webPush.sendNotification这个API能把Server端的push消息广播到所有的Client端</p></li> <li><h4 id="push-事件"><a href="#push-事件" class="header-anchor">#</a> Push 事件</h4> <p>监听 Service workers 中的 push 事件，就能获取来自推送服务器的消息，再通过 registration.showNotification 方法就能发出 Notification 了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// service-worker.js
+//这里演示的是服务端给客户端推送消息
+const onPush = function(event) {
+    event.waitUntil(self.registration.showNotification('New Post Arrival',   {
+        icon: '/logo.png'
+    }));
+};
+self.addEventListener('push', onPush);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>现在就可以打开 firefox 试一试了，打开 service workers 调试页，点击推送就可以预览效果了</p></li> <li><h4 id="notification"><a href="#notification" class="header-anchor">#</a> Notification</h4> <p>这里演示的是直接用推送功能给浏览器推送消息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//推送功能的实现
+const NOTIFICATION_API = 'Notification';
+const PERMISSION_GRANTED = 'granted';
+const NOTIFICATION_START_TIME = 23;
+const NOTIFICATION_END_TIME = 6;
+const DELAY_MINUTES = 0.1;
+const NOTIFICATION = {
+    title: '夜深了',
+    delay: DELAY_MINUTES * 60 * 1000, // 5 minutes
+    options: {
+        body: '亲，工作之余，也要注意身体噢...',
+        icon: '/favicon.ico'
+    }
+};
+
+//判断是否支持通知功能
+const isSupportNotification = () =&gt; NOTIFICATION_API in window;
+//获取对显示通知的状态
+const getPermission = () =&gt; Notification.permission;
+//是否允许显示通知
+const isPermissionGranted = permission =&gt; permission ===   PERMISSION_GRANTED;
+
+const registerNotification = () =&gt; {
+    const now = new Date();
+    const nowHour = now.getHours();
+    // Time in the notification time block
+    //判断当前时间是否在规定时间内
+    if (nowHour &lt;= NOTIFICATION_END_TIME || nowHour &gt;=   NOTIFICATION_START_TIME) {
+        setTimeout(() =&gt; new Notification(NOTIFICATION.title,   NOTIFICATION.options), NOTIFICATION.delay);
+    } else {
+        // Show notification at 11 o'clock.
+        // const start = new Date(now.getFullYear(), now.getMonth(),   now.getDate(), NOTIFICATION_START_TIME, DELAY_MINUTES);
+        // setTimeout(() =&gt; new Notification(NOTIFICATION.title,   NOTIFICATION.options), start.valueOf() - now.valueOf());
+        setTimeout(() =&gt; new Notification(NOTIFICATION.title,   NOTIFICATION.options), NOTIFICATION.delay);
+    }
+};
+//判断是否支持通知
+if (isSupportNotification()) {
+  // 判断当前是否允许显示通知
+    if (isPermissionGranted(getPermission())) {
+      // 发送通知
+        registerNotification();
+    } else {
+      // 显示“是否显示通知”弹窗给用户选择
+        Notification
+            .requestPermission()
+            .then(isPermissionGranted)
+            .then(granted =&gt; granted &amp;&amp; registerNotification());
+    }
+} else {
+    console.info('Browser not support Notification.');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><p>在 service workers 中可以监听 notification 的 click 事件，再通过 clients 操作，就能达到一些诸如打开一个新页面等类似的效果（这里还未实现）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const onNotificationClick = function(event) {
+  event.notification.close();
+  event.waitUntil(clients.openWindow(event.notification.data));
+};
+self.addEventListener('notificationclick', onNotificationClick);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>注：以下推送消息部分代码是比较合理的，可以依据代码自行测试</strong></p> <p>在注册 service worker 时，先通过 pushManager.getSubscription 方法获取当前客户端是否已经订阅过了，没有订阅则通过 pushManager.subsribe 方法来获取一个订阅；接着就将订阅信息发送给后端，交由后端储存起来</p> <p><strong>获取客户端订阅信息，并传到服务端存储示例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//index.html
+//    判断是否支持sw
+if (navigator.serviceWorker != null) {
+    navigator.serviceWorker.register('service-worker.js')
+    .catch(() =&gt; console.error('Load service worker fail'))
+    // 判断用户是否允许推送功能
+    .then(function (registration) {
+        console.log(&quot;Registered events st scope: &quot;, registration.scope);
+        //先通过 pushManager.getSubscription   方法获取当前客户端是否已经订阅过了
+        //没有订阅则通过 pushManager.subsribe 方法来获取一个订阅
+        if (window.PushManager) {
+            registration.pushManager.getSubscription().then(subscription =&gt;   {
+                // 如果用户没有订阅
+                if (!subscription) {
+                    subscribeUser(registration);
+                } else {
+                    console.log(&quot;You have subscribed our notification&quot;);
+                }       
+            });     
+        }
+    })  
+    .catch(error =&gt; console.error('Subscribe Failure: ', error.message));
+}
+// 用户订阅
+function subscribeUser(swRegistration) {
+    const applicationServerPublicKey =   &quot;BLcNXy4biJlmVrB_j-uTRITYDz1GrbPm-y35WkBPWM_I4HQ1c7AXFWH0X0TTikRkPyspff  X-Uj3zeGgl-A9xzlo&quot;;
+    const applicationServerKey =   urlBase64ToUint8Array(applicationServerPublicKey);
+    // subscribe传两个参数，一个是userVisibleOnly，这个表示消息是否必须要可  见，如果设置为不可见，Chrome将会报错，第二个参数applicationServerKey是  服务端的公钥，这个可以用web push的Node包生成
+    swRegistration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: applicationServerKey
+    })
+    // 用户同意
+    .then(function(subscription) {
+        console.log('User is subscribed:', JSON.stringify(subscription));
+        //这一段是将订阅信息发送至服务端示例
+        // jQuery.post(&quot;/add-subscription.php&quot;, {subscription:   JSON.stringify(subscription)}, function(result) {
+        //     console.log(result);
+        // });
+    })
+    // 用户不同意或者生成失败
+    .catch(function(err) {
+        console.log('Failed to subscribe the user: ', err);
+    });
+}
+function urlBase64ToUint8Array(base64String) {
+    const padding = '='.repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding)
+        .replace(/\-/g, '+')
+        .replace(/_/g, '/');
+    const rawData = window.atob(base64);
+    const outputArray = new Uint8Array(rawData.length);
+    for (let i = 0; i &lt; rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+    }
+    return outputArray;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><p><strong>服务端带上密钥推送消息给SW示例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//服务端代码
+const webpush = require('web-push');
+// 从数据库取出用户的subsciption
+// 这里的数据就是之前客户端获取到的订阅信息传到服务端存储
+const pushSubscription =   {&quot;endpoint&quot;:&quot;https://fcm.googleapis.com/fcm/send/ci3-kIulf9A:APA91bEaQfDU8z  uLSKpjzLfQ8121pNf3Rq7pjomSu4Vg-nMwLGfJSvkOUsJNCyYCOTZgmHDTu9I1xvI-dMVLZm1Eg  mEH0vDA7QFLjPKShG86W2zwX0IbtBPHEDLO0WgQ8OIhZ6yTnu-S&quot;,&quot;expirationTime&quot;:null,  &quot;keys&quot;:{&quot;p256dh&quot;:&quot;BAdAo6ldzRT5oCN8stqYRemoihPGOEJjrUDL6y8zhdA_swao_q-HlY_69  mzIVobWX2MH02TzmtRWj_VeWUFMnXQ=&quot;,&quot;auth&quot;:&quot;SS1PBnGwfMXjpJEfnoUIeQ==&quot;}};
+// push的数据
+const payload = {
+    title: '一篇新的文章',
+    body: '点开看看吧',
+    icon: '/html/app-manifest/logo_512.png',
+    data: {url: &quot;https://fed.renren.com&quot;}
+//badge: '/html/app-manifest/logo_512.png'
+};
+// 利用sendNotification方法推送消息
+webpush.sendNotification(pushSubscription, JSON.stringify(payload));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong>SW接收服务端推送消息后再通知到客户端示例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//server-eorker.js
+// 监听push事件获取推送消息
+this.addEventListener('push', function(event) {
+    console.log('[Service Worker] Push Received.');
+    console.log(`[Service Worker] Push had this data:   &quot;${event.data.text()}&quot;`);
+    let notificationData = event.data.json();
+    const title = notificationData.title;
+    // 可以发个消息通知页面
+    //util.postMessage(notificationData); 
+    // 弹消息框
+    event.waitUntil(self.registration.showNotification(title,   notificationData));
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>推送消息点击事件示例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//server-eorker.js
+//监听notificationclick事件
+this.addEventListener('notificationclick', function(event) {
+    console.log('[Service Worker] Notification click Received.');
+    
+    let notification = event.notification;
+    // 关闭通知弹窗
+    notification.close();
+    event.waitUntil(
+         //  打开新的窗口
+        clients.openWindow(notification.data.url)
+    );
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>至此完整的推送功能就已经实现了，这里可能刚开始看会比较模糊，后面我再补充一个流程图列举一下各个方面的联系。至于以下的谷歌配置，目前还不是很熟悉，至少在 Firefox上是已经可以取到订阅信息了</strong></p> <p>现在这套代码在 chrome 下无法成功订阅，如果想要 chrome 支持，那么还得用上古哥服务。</p> <p>想要 chrome 下 service workers 能够发出 Notification 并不复杂，只需以下几步：</p> <p>1、由于，GCM 已经被 FCM(Firebase Cloud Messaging) 替代，所以，先要先开通 firebase</p> <p>2、创建一个项目</p> <p>3、查看 setting（⚙）中的 cloud messaging 信息(Server key 和 Sender ID)</p> <p>4、客户端根目录下添加 manifest.json，并设置 gcm_sender_id 和 applicationServerKey，分别对应项目的Sender ID 和 Server key</p> <p>5、服务器端，在使用 web-push 调用 sendNotification API 时添加 gcmAPIKey（填 Server key）</p></li></ul></li></ul></li> <li><h2 id="踩坑点"><a href="#踩坑点" class="header-anchor">#</a> 踩坑点</h2> <ul><li><p>Manifest.json用于指定存到桌面的icon的配置大小应该和图片实际大小一致，否则会出现安装失败</p></li> <li><p>建议在编写测试代码的时候在开发者工具中Application-&gt;Service Workers中勾选Update on reload(在加载中更新)，这样的话就不用每次都清缓存，刷新即可获取最新代码</p></li> <li><p>PushManager.subscribe 返回一个带有PushSubscription的Promise，通过PushSubscription对象才能生成公钥（PushSubscription.getKey()，这个方法只有firefox有，这也是chrome不能执行的原因）,所以一般采用firefox测试推送api，不然就需要配置谷歌服务（上面有相应的配置步骤）</p></li></ul></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-1e128e82 data-v-1e128e82><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-1e128e82><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-1e128e82></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-1e128e82></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.1997d7db.js" defer></script><script src="/blog/assets/js/4.5e7973cd.js" defer></script><script src="/blog/assets/js/1.50b2f691.js" defer></script><script src="/blog/assets/js/17.67ca7118.js" defer></script>
+  </body>
+</html>

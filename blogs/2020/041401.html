@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>redux学习 | Escape&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="When the wind comes, it's better to go after it.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/blog/assets/css/0.styles.1a4e248a.css" as="style"><link rel="preload" href="/blog/assets/js/app.1997d7db.js" as="script"><link rel="preload" href="/blog/assets/js/4.5e7973cd.js" as="script"><link rel="preload" href="/blog/assets/js/1.50b2f691.js" as="script"><link rel="preload" href="/blog/assets/js/29.26bc8c85.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.b21dd939.js"><link rel="prefetch" href="/blog/assets/js/11.a04e2e73.js"><link rel="prefetch" href="/blog/assets/js/12.1b84053f.js"><link rel="prefetch" href="/blog/assets/js/13.17f7dadb.js"><link rel="prefetch" href="/blog/assets/js/14.7b36b9c0.js"><link rel="prefetch" href="/blog/assets/js/15.a5f69429.js"><link rel="prefetch" href="/blog/assets/js/16.7482eeeb.js"><link rel="prefetch" href="/blog/assets/js/17.67ca7118.js"><link rel="prefetch" href="/blog/assets/js/18.0777666d.js"><link rel="prefetch" href="/blog/assets/js/19.3352bccf.js"><link rel="prefetch" href="/blog/assets/js/20.d5883e9b.js"><link rel="prefetch" href="/blog/assets/js/21.6fe11ece.js"><link rel="prefetch" href="/blog/assets/js/22.7799ecdf.js"><link rel="prefetch" href="/blog/assets/js/23.1de22da7.js"><link rel="prefetch" href="/blog/assets/js/24.5856d22a.js"><link rel="prefetch" href="/blog/assets/js/25.40ad6e3a.js"><link rel="prefetch" href="/blog/assets/js/26.5949c984.js"><link rel="prefetch" href="/blog/assets/js/27.a9267371.js"><link rel="prefetch" href="/blog/assets/js/28.732c3425.js"><link rel="prefetch" href="/blog/assets/js/30.7826f0eb.js"><link rel="prefetch" href="/blog/assets/js/31.bf47d454.js"><link rel="prefetch" href="/blog/assets/js/32.050ee456.js"><link rel="prefetch" href="/blog/assets/js/33.1a55673a.js"><link rel="prefetch" href="/blog/assets/js/34.c9493b84.js"><link rel="prefetch" href="/blog/assets/js/35.4214209b.js"><link rel="prefetch" href="/blog/assets/js/36.56732f1b.js"><link rel="prefetch" href="/blog/assets/js/37.3e73ffd8.js"><link rel="prefetch" href="/blog/assets/js/38.dd0a0041.js"><link rel="prefetch" href="/blog/assets/js/5.74359722.js"><link rel="prefetch" href="/blog/assets/js/6.b53eece9.js"><link rel="prefetch" href="/blog/assets/js/7.32a9eccf.js"><link rel="prefetch" href="/blog/assets/js/8.6fe2e7d6.js"><link rel="prefetch" href="/blog/assets/js/9.7aa0e8bf.js"><link rel="prefetch" href="/blog/assets/js/vendors~flowchart.5a69cd9a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.1a4e248a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-c00e2ab0><div data-v-c00e2ab0><div id="loader-wrapper" class="loading-wrapper" data-v-71fac282 data-v-c00e2ab0 data-v-c00e2ab0><div class="loader-main" data-v-71fac282><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4a776749 data-v-c00e2ab0 data-v-c00e2ab0><h3 class="title" style="display:none;" data-v-4a776749 data-v-4a776749>Escape's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-4a776749 data-v-4a776749><input type="password" value="" data-v-4a776749> <span data-v-4a776749>Konck! Knock!</span> <button data-v-4a776749>OK</button></label> <div class="footer" style="display:none;" data-v-4a776749 data-v-4a776749><span data-v-4a776749><i class="iconfont reco-theme" data-v-4a776749></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4a776749>vuePress-theme-reco</a></span> <span data-v-4a776749><i class="iconfont reco-copyright" data-v-4a776749></i> <a data-v-4a776749><span data-v-4a776749>Escape</span>
+            
+          <span data-v-4a776749>2018 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-c00e2ab0><header class="navbar" data-v-c00e2ab0><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/avatar.jpg" alt="Escape's blog" class="logo"> <span class="site-name">Escape's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/爬虫/" class="nav-link"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/category1/" class="nav-link"><i class="iconfont undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/taro/" class="nav-link"><i class="iconfont undefined"></i>
+  taro
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://github.com/2445050242" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-c00e2ab0></div> <aside class="sidebar" data-v-c00e2ab0><div class="personal-info-wrapper" data-v-1285c3cd><img src="/blog/avatar.jpg" alt="author-avatar" class="personal-img" data-v-1285c3cd> <h3 class="name" data-v-1285c3cd>
+    Escape
+  </h3> <div class="num" data-v-1285c3cd><div data-v-1285c3cd><h3 data-v-1285c3cd>22</h3> <h6 data-v-1285c3cd>Article</h6></div> <div data-v-1285c3cd><h3 data-v-1285c3cd>23</h3> <h6 data-v-1285c3cd>Tag</h6></div></div> <hr data-v-1285c3cd></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/爬虫/" class="nav-link"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/category1/" class="nav-link"><i class="iconfont undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/taro/" class="nav-link"><i class="iconfont undefined"></i>
+  taro
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://github.com/2445050242" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4a776749 data-v-c00e2ab0><h3 class="title" style="display:none;" data-v-4a776749 data-v-4a776749>redux学习</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-4a776749 data-v-4a776749><input type="password" value="" data-v-4a776749> <span data-v-4a776749>Konck! Knock!</span> <button data-v-4a776749>OK</button></label> <div class="footer" style="display:none;" data-v-4a776749 data-v-4a776749><span data-v-4a776749><i class="iconfont reco-theme" data-v-4a776749></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4a776749>vuePress-theme-reco</a></span> <span data-v-4a776749><i class="iconfont reco-copyright" data-v-4a776749></i> <a data-v-4a776749><span data-v-4a776749>Escape</span>
+            
+          <span data-v-4a776749>2018 - </span>
+          2020
+        </a></span></div></div> <div data-v-c00e2ab0><main class="page"><div class="page-title" style="display:none;"><h1>redux学习</h1> <hr> <div data-v-ba876724><i class="iconfont reco-account" data-v-ba876724><span data-v-ba876724>Escape</span></i> <i class="iconfont reco-date" data-v-ba876724><span data-v-ba876724>2020-04-14</span></i> <!----> <i class="iconfont reco-tag tags" data-v-ba876724><span class="tag-item" data-v-ba876724>
+      vue
+    </span><span class="tag-item" data-v-ba876724>
+      vue-cli
+    </span><span class="tag-item" data-v-ba876724>
+      typescript
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><ul><li><h4 id="api用法"><a href="#api用法" class="header-anchor">#</a> API用法</h4> <ul><li><h5 id="store-保存数据的地方，可以把它看成一个容器，整个应用只能有一个store"><a href="#store-保存数据的地方，可以把它看成一个容器，整个应用只能有一个store" class="header-anchor">#</a> ==<code>Store</code>== 保存数据的地方，可以把它看成一个容器，整个应用只能有一个<code>Store</code></h5></li></ul> <p><code>Redux</code> 提供<code>createStore</code>这个函数，用来生成 <code>Store</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore } from 'redux'
+const store = createStore(reducer)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li><h5 id="state-数据集合"><a href="#state-数据集合" class="header-anchor">#</a> ==<code>State</code>== 数据集合</h5></li></ul> <p>当前时刻的 <code>State</code>，可以通过<code>store.getState()</code>拿到</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore } from 'redux'
+const store = createStore(reducer)
+
+const state = store.getState()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li><h5 id="action-view-发出的通知，表示-state-应该要发生变化了"><a href="#action-view-发出的通知，表示-state-应该要发生变化了" class="header-anchor">#</a> ==<code>Action</code>== <code>View</code> 发出的通知，表示 <code>State</code> 应该要发生变化了</h5></li></ul> <p><code>Action</code>是一个对象，其中的<code>type</code>属性是必须的，表示<code>Action</code>的名称</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const action = {
+  type: 'ADD_TODO',
+  payload: 'Learn Redux'
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>可以使用函数返回创建多个<code>Aciton</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const ADD_TODO = '添加 TODO'
+
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    text
+  }
+}
+
+const action = addTodo('Learn Redux')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li><h5 id="store-dispatch-是-view-发出-action-的唯一方法"><a href="#store-dispatch-是-view-发出-action-的唯一方法" class="header-anchor">#</a> ==<code>store.dispatch()</code>== 是 <code>View</code> 发出 <code>Action</code> 的唯一方法</h5></li></ul> <p><code>store.dispatch</code>接受一个 <code>Action</code> 对象作为参数，将它发送出去</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore } from 'redux'
+const store = createStore(reducer)
+
+store.dispatch(addTodo('Learn Redux'))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li><h5 id="reducer-state-的计算过程"><a href="#reducer-state-的计算过程" class="header-anchor">#</a> ==<code>Reducer</code>== <code>State</code> 的计算过程</h5></li></ul> <p><code>Reducer</code> 是一个函数，它接受 <code>Action</code> 和当前 <code>State</code> 作为参数，返回一个新的 <code>State</code>，整个应用的初始状态，可以作为 <code>State</code> 的默认值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const defaultState = 0
+const reducer = (state = defaultState, action) =&gt; {
+  switch (action.type) {
+    case 'ADD':
+      return state + action.payload
+    default: 
+      return state
+  }
+}
+
+const state = reducer(1, {
+  type: 'ADD',
+  payload: 2
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><code>store.dispatch</code>方法会触发 <code>Reducer</code> 的自动执行。为此，<code>Store</code> 需要知道 <code>Reducer</code> 函数，做法就是在生成 <code>Store</code> 的时候，将 <code>Reducer</code> 传入<code>createStore</code>方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore } from 'redux'
+const store = createStore(reducer)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>一系列 <code>Action</code> 对象按照顺序作为一个数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const actions = [
+  { type: 'ADD', payload: 0 },
+  { type: 'ADD', payload: 1 },
+  { type: 'ADD', payload: 2 }
+]
+
+const total = actions.reduce(reducer, 0) // 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- extra-class"><pre><code>  注意点：  
+  - Reducer 函数最重要的特征是，它是一个纯函数  
+  - Reducer 函数里面不能改变 State，必须返回一个全新的对象
+</code></pre></div><ul><li><h5 id="store-subscribe-设置监听函数，一旦-state-发生变化，就自动执行这个函数"><a href="#store-subscribe-设置监听函数，一旦-state-发生变化，就自动执行这个函数" class="header-anchor">#</a> ==<code>store.subscribe()</code>== 设置监听函数，一旦 <code>State</code> 发生变化，就自动执行这个函数</h5></li></ul> <p>只要把 <code>View</code> 的更新函数（对于 <code>React</code> 项目，就是组件的<code>render</code>方法或<code>setState</code>方法）放入<code>listen</code>，就会实现 <code>View</code> 的自动渲染</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore } from 'redux'
+const store = createStore(reducer)
+
+store.subscribe(listener)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><code>store.subscribe</code>方法返回一个函数，调用这个函数就可以解除监听</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let unsubscribe = store.subscribe(() =&gt;
+  console.log(store.getState())
+)
+
+unsubscribe()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li><h5 id="combinereducers-用于-reducer-的拆分"><a href="#combinereducers-用于-reducer-的拆分" class="header-anchor">#</a> ==<code>combineReducers</code>== 用于 <code>Reducer</code> 的拆分</h5></li></ul> <p>你只要定义各个子 <code>Reducer</code> 函数，然后用这个方法，将它们合成一个大的 <code>Reducer</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { combineReducers } from 'redux'
+
+const chatReducer = combineReducers({
+  chatLog,
+  statusMessage,
+  userName
+})
+
+export default todoApp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>可以把所有子 <code>Reducer</code> 放在一个文件里面，然后统一引入</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { combineReducers } from 'redux'
+import * as reducers from './reducers'
+
+const reducer = combineReducers(reducers)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><h4 id="功能实现示例"><a href="#功能实现示例" class="header-anchor">#</a> 功能实现示例</h4> <ul><li><h5 id="简单实现cretestore"><a href="#简单实现cretestore" class="header-anchor">#</a> 简单实现<code>creteStore</code></h5></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const createStore = (reducer) =&gt; {
+  let state
+  let listeners = []
+
+  const getState = () =&gt; state
+
+  const dispatch = (action) =&gt; {
+    state = reducer(state, action)
+    listeners.forEach(listeners =&gt; listener())
+  }
+
+  const subscribe = (listener) =&gt; {
+    listeners.push(listener)
+    return () =&gt; {
+      listeners = listeners.filter(l =&gt; l !== listener)
+    }
+  }
+
+  dispatch({})
+
+  return {getState, dispatch, subscribe}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><ul><li><h5 id="简单实现combinereducer"><a href="#简单实现combinereducer" class="header-anchor">#</a> 简单实现<code>combineReducer</code></h5></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const combineReducers = reducers =&gt; {
+  return (state = {}, action) =&gt; {
+    return Object.keys(reducers).reduce(
+      (nextState, key) =&gt; {
+        nextState[key] = reducers[key](state[key], action)
+        return nextState
+      },
+      {} 
+    )
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li><h5 id="简单实现applymiddlewares"><a href="#简单实现applymiddlewares" class="header-anchor">#</a> 简单实现<code>applyMiddlewares</code></h5></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default function applyMiddleware(...middlewares) {
+  return (createStore) =&gt; (reducer, preloadedState, enhancer) =&gt; {
+    var store = createStore(reducer, preloadedState, enhancer)
+    var dispatch = store.dispatch
+    var chain = []
+
+    var middlewareAPI = {
+      getState: store.getState,
+      dispatch: (action) =&gt; dispatch(action)
+    }
+    chain = middlewares.map(middleware =&gt; middleware(middlewareAPI))
+    dispatch = compose(...chain)(store.dispatch)
+
+    return {...store, dispatch}
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></li> <li><h4 id="工作流程"><a href="#工作流程" class="header-anchor">#</a> 工作流程</h4> <ul><li><h5 id="工作流程图"><a href="#工作流程图" class="header-anchor">#</a> 工作流程图</h5></li></ul> <p><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016091802.jpg" alt="工作流程图"></p> <ul><li><p>用户发出 <code>Action</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>store.dispatch(action)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><code>Store</code> 自动调用 <code>Reducer</code>，并且传入两个参数：当前 <code>State</code> 和收到的 <code>Action</code>。 <code>Reducer</code> 会返回新的 <code>State</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let nextState = todoApp(previousState, action)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><code>State</code> 一旦有变化，<code>Store</code> 就会调用监听函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 设置监听函数
+store.subscribe(listener)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p><code>listener</code>可以通过<code>store.getState()</code>得到当前状态。如果使用的是 <code>React</code>，这时可以触发重新渲染 <code>View</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function listerner() {
+  let newState = store.getState()
+  component.setState(newState)   
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li></ul></li> <li><h4 id="进阶"><a href="#进阶" class="header-anchor">#</a> 进阶</h4> <ul><li><h5 id="中间件使用"><a href="#中间件使用" class="header-anchor">#</a> 中间件使用</h5></li></ul> <p>将中间件放在<code>applyMiddleware</code>方法之中，传入<code>createStore</code>方法，就完成了<code>store.dispatch()</code>的功能增强</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { applyMiddleware, createStore } from 'redux'
+import createLogger from 'redux-logger'
+const logger = createLogger()
+
+const store = createStore(
+  reducer,
+  applyMiddleware(logger)
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><code>createStore</code>方法可以接受整个应用的初始状态作为参数，那样的话，<code>applyMiddleware</code>就是第三个参数了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const store = createStore(
+  reducer,
+  initial_state,
+  applyMiddleware(logger)
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>中间件的次序有讲究。<code>applyMiddleware</code>方法的三个参数，就是三个中间件。有的中间件有次序要求，使用前要查一下文档。比如，<code>logger</code>就一定要放在最后，否则输出结果会不正确</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const store = createStore(
+  reducer,
+  applyMiddleware(thunk, promise, logger)
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li><h5 id="redux-thunk-中间件"><a href="#redux-thunk-中间件" class="header-anchor">#</a> redux-thunk 中间件</h5></li></ul> <p>加载成功后（<code>componentDidMount</code>方法），它送出了（<code>dispatch</code>方法）一个 <code>Action</code>，向服务器要求数据 <code>fetchPosts(selectedSubreddit)</code>。这里的<code>fetchPosts</code>就是 <code>Action Creator</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class AsyncApp extends Component {
+  componentDidMount() {
+    const { dispatch, selectedPost } = this.props
+    dispatch(fetchPosts(selectedPost))
+  }
+
+// ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><code>fetchPosts</code>是一个<code>Action Creator</code>（动作生成器），返回一个函数。这个函数执行后，先发出一个<code>Action（requestPosts(postTitle)</code>），然后进行异步操作。拿到结果后，先将结果转成 <code>JSON</code> 格式，然后再发出一个 <code>Action</code>（ <code>receivePosts(postTitle, json)</code>）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!--Action Creator --&gt;
+const fetchPosts = postTitle =&gt; (dispatch, getState) =&gt; {
+  dispatch(requestPosts(postTitle))
+  return fetch(`/some/API/${postTitle}.json`)
+    .then(response =&gt; response.json())
+    .then(json =&gt; dispatch(receivePosts(postTitle, json)))
+  }
+}
+
+// 使用方法一
+store.dispatch(fetchPosts('reactjs'))
+// 使用方法二
+store.dispatch(fetchPosts('reactjs')).then(() =&gt;
+  console.log(store.getState())
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><code>Action</code> 是由<code>store.dispatch</code>方法发送的。而<code>store.dispatch</code>方法正常情况下，参数只能是对象，不能是函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+import reducer from './reducers'
+
+// Note: this API requires redux@&gt;=3.1.0
+const store = createStore(
+  reducer,
+  applyMiddleware(thunk)
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><div class="language- extra-class"><pre><code>  注意点：  
+  
+  - `fetchPosts`返回了一个函数，而普通的 `Action Creator` 默认返回一个对象
+  - 返回的函数的参数是`dispatch`和`getState`这两个 `Redux` 方法，普通的 `Action Creator` 的参数是 `Action` 的内容
+  - 在返回的函数之中，先发出一个 `Action`（`requestPosts(postTitle)`），表示操作开始
+  - 异步操作结束之后，再发出一个 `Action`（`receivePosts(postTitle, json)`），表示操作结束
+</code></pre></div><ul><li><h5 id="redux-promise-中间件"><a href="#redux-promise-中间件" class="header-anchor">#</a> <code>redux-promise</code> 中间件</h5></li></ul> <p><code>Action Creator</code> 返回一个 <code>Promise</code> 对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createStore, applyMiddleware } from 'redux'
+import promiseMiddleware from 'redux-promise'
+import reducer from './reducers'
+
+const store = createStore(
+  reducer,
+  applyMiddleware(promiseMiddleware)
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>这个中间件使得<code>store.dispatch</code>方法可以接受 <code>Promise</code> 对象作为参数。这时，<code>Action Creator</code> 有两种写法。写法一，返回值是一个 <code>Promise</code> 对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!--写法一--&gt;
+const fetchPosts = 
+  (dispatch, postTitle) =&gt; new Promise(function (resolve, reject) {
+     dispatch(requestPosts(postTitle))
+     return fetch(`/some/API/${postTitle}.json`)
+       .then(response =&gt; {
+         type: 'FETCH_POSTS',
+         payload: response.json()
+       })
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>写法二，<code>Action</code> 对象的<code>payload</code>属性是一个 <code>Promise</code> 对象。这需要从<code>redux-actions</code>模块引入<code>createAction</code>方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!--写法二--&gt;
+import { createAction } from 'redux-actions'
+
+class AsyncApp extends Component {
+  componentDidMount() {
+    const { dispatch, selectedPost } = this.props
+    // 发出同步 Action
+    dispatch(requestPosts(selectedPost));
+    // 发出异步 Action
+    dispatch(createAction(
+      'FETCH_POSTS', 
+      fetch(`/some/API/${postTitle}.json`)
+        .then(response =&gt; response.json())
+    ))
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-1e128e82 data-v-1e128e82><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-1e128e82><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-1e128e82></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-1e128e82></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.1997d7db.js" defer></script><script src="/blog/assets/js/4.5e7973cd.js" defer></script><script src="/blog/assets/js/1.50b2f691.js" defer></script><script src="/blog/assets/js/29.26bc8c85.js" defer></script>
+  </body>
+</html>

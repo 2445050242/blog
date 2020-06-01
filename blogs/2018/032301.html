@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nodeJs可视化爬虫 | Escape&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="When the wind comes, it's better to go after it.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/blog/assets/css/0.styles.1a4e248a.css" as="style"><link rel="preload" href="/blog/assets/js/app.1997d7db.js" as="script"><link rel="preload" href="/blog/assets/js/4.5e7973cd.js" as="script"><link rel="preload" href="/blog/assets/js/1.50b2f691.js" as="script"><link rel="preload" href="/blog/assets/js/15.a5f69429.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.b21dd939.js"><link rel="prefetch" href="/blog/assets/js/11.a04e2e73.js"><link rel="prefetch" href="/blog/assets/js/12.1b84053f.js"><link rel="prefetch" href="/blog/assets/js/13.17f7dadb.js"><link rel="prefetch" href="/blog/assets/js/14.7b36b9c0.js"><link rel="prefetch" href="/blog/assets/js/16.7482eeeb.js"><link rel="prefetch" href="/blog/assets/js/17.67ca7118.js"><link rel="prefetch" href="/blog/assets/js/18.0777666d.js"><link rel="prefetch" href="/blog/assets/js/19.3352bccf.js"><link rel="prefetch" href="/blog/assets/js/20.d5883e9b.js"><link rel="prefetch" href="/blog/assets/js/21.6fe11ece.js"><link rel="prefetch" href="/blog/assets/js/22.7799ecdf.js"><link rel="prefetch" href="/blog/assets/js/23.1de22da7.js"><link rel="prefetch" href="/blog/assets/js/24.5856d22a.js"><link rel="prefetch" href="/blog/assets/js/25.40ad6e3a.js"><link rel="prefetch" href="/blog/assets/js/26.5949c984.js"><link rel="prefetch" href="/blog/assets/js/27.a9267371.js"><link rel="prefetch" href="/blog/assets/js/28.732c3425.js"><link rel="prefetch" href="/blog/assets/js/29.26bc8c85.js"><link rel="prefetch" href="/blog/assets/js/30.7826f0eb.js"><link rel="prefetch" href="/blog/assets/js/31.bf47d454.js"><link rel="prefetch" href="/blog/assets/js/32.050ee456.js"><link rel="prefetch" href="/blog/assets/js/33.1a55673a.js"><link rel="prefetch" href="/blog/assets/js/34.c9493b84.js"><link rel="prefetch" href="/blog/assets/js/35.4214209b.js"><link rel="prefetch" href="/blog/assets/js/36.56732f1b.js"><link rel="prefetch" href="/blog/assets/js/37.3e73ffd8.js"><link rel="prefetch" href="/blog/assets/js/38.dd0a0041.js"><link rel="prefetch" href="/blog/assets/js/5.74359722.js"><link rel="prefetch" href="/blog/assets/js/6.b53eece9.js"><link rel="prefetch" href="/blog/assets/js/7.32a9eccf.js"><link rel="prefetch" href="/blog/assets/js/8.6fe2e7d6.js"><link rel="prefetch" href="/blog/assets/js/9.7aa0e8bf.js"><link rel="prefetch" href="/blog/assets/js/vendors~flowchart.5a69cd9a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.1a4e248a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-c00e2ab0><div data-v-c00e2ab0><div id="loader-wrapper" class="loading-wrapper" data-v-71fac282 data-v-c00e2ab0 data-v-c00e2ab0><div class="loader-main" data-v-71fac282><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div><div data-v-71fac282></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4a776749 data-v-c00e2ab0 data-v-c00e2ab0><h3 class="title" style="display:none;" data-v-4a776749 data-v-4a776749>Escape's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-4a776749 data-v-4a776749><input type="password" value="" data-v-4a776749> <span data-v-4a776749>Konck! Knock!</span> <button data-v-4a776749>OK</button></label> <div class="footer" style="display:none;" data-v-4a776749 data-v-4a776749><span data-v-4a776749><i class="iconfont reco-theme" data-v-4a776749></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4a776749>vuePress-theme-reco</a></span> <span data-v-4a776749><i class="iconfont reco-copyright" data-v-4a776749></i> <a data-v-4a776749><span data-v-4a776749>Escape</span>
+            
+          <span data-v-4a776749>2018 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-c00e2ab0><header class="navbar" data-v-c00e2ab0><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/avatar.jpg" alt="Escape's blog" class="logo"> <span class="site-name">Escape's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/爬虫/" class="nav-link"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/category1/" class="nav-link"><i class="iconfont undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/taro/" class="nav-link"><i class="iconfont undefined"></i>
+  taro
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://github.com/2445050242" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-c00e2ab0></div> <aside class="sidebar" data-v-c00e2ab0><div class="personal-info-wrapper" data-v-1285c3cd><img src="/blog/avatar.jpg" alt="author-avatar" class="personal-img" data-v-1285c3cd> <h3 class="name" data-v-1285c3cd>
+    Escape
+  </h3> <div class="num" data-v-1285c3cd><div data-v-1285c3cd><h3 data-v-1285c3cd>22</h3> <h6 data-v-1285c3cd>Article</h6></div> <div data-v-1285c3cd><h3 data-v-1285c3cd>23</h3> <h6 data-v-1285c3cd>Tag</h6></div></div> <hr data-v-1285c3cd></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/爬虫/" class="nav-link"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/category1/" class="nav-link"><i class="iconfont undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/taro/" class="nav-link"><i class="iconfont undefined"></i>
+  taro
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://github.com/2445050242" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4a776749 data-v-c00e2ab0><h3 class="title" style="display:none;" data-v-4a776749 data-v-4a776749>nodeJs可视化爬虫</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-4a776749 data-v-4a776749><input type="password" value="" data-v-4a776749> <span data-v-4a776749>Konck! Knock!</span> <button data-v-4a776749>OK</button></label> <div class="footer" style="display:none;" data-v-4a776749 data-v-4a776749><span data-v-4a776749><i class="iconfont reco-theme" data-v-4a776749></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4a776749>vuePress-theme-reco</a></span> <span data-v-4a776749><i class="iconfont reco-copyright" data-v-4a776749></i> <a data-v-4a776749><span data-v-4a776749>Escape</span>
+            
+          <span data-v-4a776749>2018 - </span>
+          2020
+        </a></span></div></div> <div data-v-c00e2ab0><main class="page"><div class="page-title" style="display:none;"><h1>nodeJs可视化爬虫</h1> <hr> <div data-v-ba876724><i class="iconfont reco-account" data-v-ba876724><span data-v-ba876724>Escape</span></i> <i class="iconfont reco-date" data-v-ba876724><span data-v-ba876724>2018-03-16</span></i> <!----> <i class="iconfont reco-tag tags" data-v-ba876724><span class="tag-item" data-v-ba876724>
+      node
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><ul><li><h2 id="先写一下答大体思路，后面等demo完整之后再继续深入地分析过程："><a href="#先写一下答大体思路，后面等demo完整之后再继续深入地分析过程：" class="header-anchor">#</a> 先写一下答大体思路，后面等demo完整之后再继续深入地分析过程：</h2> <ul><li><h5 id="首先全局安装express，并全局安装express-generator。"><a href="#首先全局安装express，并全局安装express-generator。" class="header-anchor">#</a> 首先全局安装express，并全局安装express-generator。</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install -g express  
+npm install -g express-generator
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>（ps:这里有个小坑，就是在成功安装express，在命令行会提示express不是内部或外部命令，最新express4.0版本中将命令工具分家出来了(项目地址:https://github.com/expressjs/generator),所以我们还需要安装一个命令工具,命令如下:npm install -g express-generator）</p></li> <li><h5 id="安装express模板，这里简单介绍两种模板引擎"><a href="#安装express模板，这里简单介绍两种模板引擎" class="header-anchor">#</a> 安装express模板，这里简单介绍两种模板引擎</h5> <ul><li><p>使用jade模板语法，为express默认模板</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>express jade
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>jade为项目名称，自取;
+<a href="http://cnodejs.org/topic/5368adc5cf738dd6090060f2" target="_blank" rel="noopener noreferrer">参考文档地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>使用ejs模板语法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>express -e ejs 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>ejs为项目名称，-e则表示选择使用ejs模板
+<a href="http://www.360doc.com/content/16/0115/10/597197_528136785.shtml" target="_blank" rel="noopener noreferrer">参考文档地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>jade模板虽然较为简洁，不过更多人比较倾向于ejs模板，更容易上手，建议使用ejs，当然这里选择哪一种语法就取决于个人了。还有更多模板引擎大家可以自己去了解一下，这里就不多做介绍了。。。</p></li></ul></li> <li><h5 id="开始搭建我们所需要的页面以及爬虫程序（这一步最为关键）"><a href="#开始搭建我们所需要的页面以及爬虫程序（这一步最为关键）" class="header-anchor">#</a> 开始搭建我们所需要的页面以及爬虫程序（这一步最为关键）</h5> <p>先把主要代码贴出来看一下(以下代码以ejs模板为例，如果要使用其他模板，请自行更换模板)（这里就先简单的记录一下代码，等到有时间再好好地整理一下吧）</p> <ul><li><p>先在routes目录下创建test.js文件</p> <p><img src="//note.youdao.com/yws/res/142/WEBRESOURCE9b9e0ad713445ca77315d532df1361ba" alt=""></p></li> <li><p>将以下代码写到test.js文件中</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var express = require('express');
+var router = express.Router();
+
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+    res.render('test');
+});
+  
+module.exports = router;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><p>在view目录下创建对应的test.ejs并将以下代码写到文件中（test.ejs文件为简单的可视化界面，用于向爬虫页面传递参数）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;123132&lt;/title&gt;
+    &lt;link rel='stylesheet' href='/stylesheets/style.css'/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form action=&quot;/&quot; method=&quot;post&quot;&gt;
+    &lt;p&gt;需要爬取的文章数&lt;input type=&quot;text&quot; name=&quot;num&quot;/&gt;&lt;/p&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; id=&quot;btn&quot;/&gt;
+&lt;/form&gt;
+&lt;script&gt;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></li> <li><p>在routes文件目录下创建index.js文件并将以下代码写入文件中(index.js文件执行爬虫功能，并将爬取到的数据传输至模板中)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    var express = require('express');
+var http = require('http');
+var fs = require('fs');
+var cheerio = require('cheerio');
+var request = require('request');
+var querystring = require('querystring');
+var bodyParser = require('body-parser');
+var util = require('util');
+
+var router = express.Router();
+var app = express();
+
+// 引入body-parser中间件来获取传递的参数
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+// 爬取文章的序号
+var i = 0;
+// 爬取的路径
+var url = &quot;http://www.ss.pku.edu.cn/index.php/newscenter/news/2391&quot;;
+// 用来存储接收的参数
+// var num = 5;
+// 用来存储爬取到的内容
+var html1 = [];
+// 爬虫主体函数块
+startRequest = function (x, num) {
+    return new Promise(function (resolve, reject) {
+        //采用http模块向服务器发起一次get请求
+        http.get(x, function (res) {
+            var html = '';        //用来存储请求网页的整个html内容
+            var titles = [];
+            res.setEncoding('utf-8'); //防止中文乱码
+            //监听data事件，每次取一块数据
+            res.on('data', function (chunk) {
+                html += chunk;
+            });
+            //监听end事件，如果整个网页内容的html都获取完毕，就执行回调函数
+            res.on('end', function () {
+                var $ = cheerio.load(html); //采用cheerio模块解析html
+                var time = $('.article-info a:first-child').next().text().trim();
+                var news_item = {
+                    //获取文章的标题
+                    title: $('div.article-title a').text().trim(),
+                    //获取文章发布的时间
+                    Time: time,
+                    //获取当前文章的url
+                    link: &quot;http://www.ss.pku.edu.cn&quot; + $(&quot;div.article-title a&quot;).attr('href'),
+                    //获取供稿单位
+                    author: $('[title=供稿]').text().trim(),
+                    //i是用来判断获取了多少篇文章
+                    i: i = i + 1,
+                };
+                console.log(news_item);     //打印新闻信息
+                html1.push(news_item.title);
+                var news_title = $('div.article-title a').text().trim();
+                //下一篇文章的url
+                var nextLink = &quot;http://www.ss.pku.edu.cn&quot; + $(&quot;li.next a&quot;).attr('href');
+                str1 = nextLink.split('-');  //去除掉url后面的中文
+                str = encodeURI(str1[0]);
+                //这是亮点之一，通过控制I,可以控制爬取多少篇文章.
+                if (i &gt;= num) {
+                    // startRequest(str, num);
+                    resolve({bool: 1, data: html1});
+                } else {
+                    resolve({bool: 0, url: str, data: html1});
+                }
+            });
+            // setTimeout(function () {
+            //     resolve(html1);
+            // }, 2000);
+        }).on('error', function (err) {
+            console.log(err);
+        });
+    })
+}
+
+
+/* GET home page. */
+router.post('/', function (req, res, next) {
+    var start = async function () {
+//接收传递过来的参数
+        let num = req.body.num;
+        let ht = await startRequest(url, num);
+        let data = &quot;&quot;;
+//根据异步传回来的bool变量的值判断是否继续爬取数据
+        while (!ht.bool) {
+            ht = await startRequest(ht.url, num);
+            data += ht.data;
+        }
+        await  res.render('index', {title: ht.data});
+    };
+    start();
+});
+
+module.exports = router;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br></div></div></li> <li><p>在views目录下创建对应的index.ejs文件并将以下代码写入文件中（index.ejs负责将爬取到的数据展示在页面中，需要对数据做一些修饰就可以在这里操作）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;123132&lt;/title&gt;
+    &lt;link rel='stylesheet' href='/stylesheets/style.css' /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;% for (i in title){ %&gt;
+        &lt;%= title[i] %&gt;&lt;br&gt;
+  &lt;% } %&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li> <li><p>至此一个简单的基于node express框架的可视化爬虫demo就已经完成了，这里只是简单地演示了一下爬取过程，对爬取到的数据没有进行修饰，大家可以根据自己的需求对代码进行修改，这里只是提供一个思路，有兴趣的小伙伴可以自己动手尝试一下~~~</p></li></ul></li></ul></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-1e128e82 data-v-1e128e82><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-1e128e82><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-1e128e82></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-1e128e82></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.1997d7db.js" defer></script><script src="/blog/assets/js/4.5e7973cd.js" defer></script><script src="/blog/assets/js/1.50b2f691.js" defer></script><script src="/blog/assets/js/15.a5f69429.js" defer></script>
+  </body>
+</html>
